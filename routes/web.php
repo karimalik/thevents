@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventsController;
 use App\Http\Controllers\WelcomeController;
 
 /*
@@ -22,6 +23,7 @@ use App\Http\Controllers\WelcomeController;
  */
 Route::resource('/', WelcomeController::class);
 Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about-us');
+Route::resource('booking-events', EventsController::class);
 
 Auth::routes();
 

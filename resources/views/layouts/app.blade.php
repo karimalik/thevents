@@ -60,7 +60,7 @@
                         <ul class="nav">
                             <li><a href="{{ route('index') }}">Home</a></li>
                             <li><a href="{{ route('about-us') }}">About Us</a></li>
-                            <li><a href="details.html">Item Details</a></li>
+                            <li><a href="{{ route('booking-events.index') }}">Events</a></li>
                             <li><a href="author.html">Author</a></li>
                             <li><a href="create.html">Create Yours</a></li>
                         </ul>   
