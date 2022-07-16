@@ -15,15 +15,13 @@ use App\Http\Controllers\WelcomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 /**
  * 
  * website route
  */
 Route::resource('/', WelcomeController::class);
+Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about-us');
 
 Auth::routes();
 
