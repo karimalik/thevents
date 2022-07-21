@@ -18,7 +18,7 @@
                 </p>
                 <div class="buttons">
                 <div class="border-button">
-                    <a href="#">Explore Top Events</a>
+                    <a href="{{ route('booking-events.index') }}">Explore Top Events</a>
                 </div>
                 <div class="main-button">
                     <a href="https://youtube.com/templatemo" target="_blank">Watch Our Videos</a>

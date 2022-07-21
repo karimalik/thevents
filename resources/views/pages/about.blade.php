@@ -15,7 +15,7 @@
               <span><a href="{{ route('index') }}">Home</a> > About Us</span>
               <div class="buttons">
                 <div class="main-button">
-                  <a href="#">Explore Our Events</a>
+                  <a href="{{ route('booking-events.index') }}">Explore Our Events</a>
                 </div>
                 <div class="border-button">
                   <a href="#">Create Your Events</a>

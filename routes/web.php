@@ -21,8 +21,9 @@ use App\Http\Controllers\WelcomeController;
  * 
  * website route
  */
-Route::resource('/', WelcomeController::class);
 Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about-us');
+Route::get('contact-us', [App\Http\Controllers\ContactController::class, 'index'])->name('contact-us');
+Route::resource('/', WelcomeController::class);
 Route::resource('booking-events', EventsController::class);
 
 Auth::routes();

@@ -1733,6 +1733,22 @@ Details Page Style
   color: #fff;
 }
 
+.item-details-page form textarea {
+    width: 970px;
+    height: 100px;
+    border: 1px solid #3190e9;
+    outline: none;
+    border-radius: 23px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.item-details-page form textarea::placeholder {
+    color: #fff;
+  }
+
 .item-details-page button {
   font-size: 14px;
   color: #fff;
