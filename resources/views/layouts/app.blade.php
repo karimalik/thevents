@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title')</title>
+    @notifyCss
 
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
@@ -53,17 +54,34 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="/" class="logo">
-                            <img src="folders/assets/images/logo.png" alt="">
+                            <img src="folders/assets/images/logo2.png" alt="">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="{{ route('index') }}">Home</a></li>
-                            <li><a href="{{ route('about-us') }}">About Us</a></li>
+                            {{-- <li><a href="{{ route('about-us') }}">About Us</a></li> --}}
                             <li><a href="{{ route('booking-events.index') }}">Events</a></li>
                             <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
-                            <li><a href="create.html">Create Yours</a></li>
-                        </ul>   
+                            {{-- <li><a href="create.html">Create Yours</a></li> --}}
+                            @if(Route::has('login'))
+                                @auth
+                                  
+                                  <li><a href="{{ url('/home') }}">Dashboard</a></li>
+                                  <li><a href="#">Create Yours</a></li>
+                                @else
+
+                                  <li><a href="{{ url('login') }}">Sign In</a></li>
+
+                                  @if(Route::has('register'))
+
+                                   <li><a href="{{ url('register') }}">Sign Up</a></li>
+
+                                  @endif
+                                @endauth
+                            @endif
+                            
+                        </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
@@ -129,7 +147,7 @@
         </div>
     </div>
   <!-- ***** Create Events End ***** -->
- 
+
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
@@ -157,5 +175,10 @@
   <script src="{{asset('folders/assets/js/tabs.js')}}"></script>
   <script src="{{asset('folders/assets/js/popup.js')}}"></script>
   <script src="{{asset('folders/assets/js/custom.js')}}"></script>
+
+    {{-- @include('notify::messages') --}}
+    {{-- // Laravel 7 or greater --}}
+    <x:notify-messages />
+    @notifyJs
 </body>
 </html>
