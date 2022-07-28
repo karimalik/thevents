@@ -26,7 +26,23 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \App\Models\Category::factory()->create([
-            'name' => 'Art',
+            'name' => 'Acedemic',
+        ]);
+
+        \App\Models\Category::factory()->create([
+            'name' => 'Entertainment',
+        ]);
+
+        \App\Models\Category::factory()->create([
+            'name' => 'Sport',
+        ]);
+
+        \App\Models\Category::factory()->create([
+            'name' => 'Concerts',
+        ]);
+
+        \App\Models\Category::factory()->create([
+            'name' => 'Community',
         ]);
 
         \App\Models\Category::factory()->create([
@@ -34,7 +50,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \App\Models\Category::factory()->create([
-            'name' => 'Art',
+            'name' => 'Conference',
         ]);
     }
 }
