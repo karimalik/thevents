@@ -28,5 +28,13 @@ class DatabaseSeeder extends Seeder
         \App\Models\Category::factory()->create([
             'name' => 'Art',
         ]);
+
+        \App\Models\Category::factory()->create([
+            'name' => 'Art',
+        ]);
+
+        \App\Models\Category::factory()->create([
+            'name' => 'Art',
+        ]);
     }
 }

@@ -1,80 +1,59 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('title')
     TH-Events : Contact Us
 @endsection
 
 @section('content')
-    <!-- ***** Pages Heading Start ***** -->
-    <div class="page-heading normal-space">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h6>TH-Events</h6>
-              <h2>Get In Touch</h2>
-              <span><a href="{{ route('index') }}">Home</a> > Contact Us</span>
-              <div class="buttons">
-                <div class="main-button">
-                  <a href="{{ route('booking-events.index') }}">Explore Our Events</a>
-                </div>
-                <div class="border-button">
-                  <a href="#">Create Your Events</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- ***** Pages Heading End ***** -->
+    <!--================================
+    =            Page Title            =
+    =================================-->
 
-    <!-- ***** Get In Touch  Start ***** -->
-    <div class="item-details-page">
+    <section class="page-title bg-title overlay-dark">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-heading">
-                <div class="line-dec"></div>
-                <h2>Get In <em>Touch</em>.</h2>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <form id="contact" action="" method="POST">
-                @csrf
-                <div class="row">
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <label for="title">name</label>
-                      <input type="text" name="name" id="title" placeholder="Name" autocomplete="on" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <label for="description">Email</label>
-                      <input type="email" name="email" id="description" placeholder="Email" autocomplete="on" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <label for="username">Subject</label>
-                      <input type="text" name="subject" id="username" placeholder="Subject" autocomplete="on" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <label for="price">Message</label><br/>
-                      <textarea name="message" id="description" row="5" placeholder="Message" autocomplete="on" required></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-8 justify-content-center">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="orange-button">Submit</button>
-                    </fieldset>
-                  </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="title">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <ol class="breadcrumb justify-content-center p-0 m-0">
+                    <li class="breadcrumb-item"><a href=" {{ route('index') }} ">Home</a></li>
+                    <li class="breadcrumb-item active">Contact Us</li>
+                    </ol>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-    </div>
-    <!-- ***** Get In Touch End ***** -->
+    </section>
+
+    <!--====  End of Page Title  ====-->
+
+    <section class="section contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3>Get in <span class="alternate">Touch</span></h3>
+                        <p>Do you have a question? Leave us a message and one of our experts will contact you</p>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control main" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control main" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control main" name="phone" id="phone" placeholder="Phone">
+                </div>
+                <div class="col-md-12">
+                    <textarea name="message" id="message" class="form-control main" rows="10" placeholder="Your Message"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-main-md">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
 @endsection

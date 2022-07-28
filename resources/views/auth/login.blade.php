@@ -22,11 +22,11 @@
             <div class="row d-flex">
                 <div class="col-lg-6">
                     <div class="card1 pb-5">
-                        <div class="row">
-                           <a href="{{ route('index') }}"><img src="folders/assets/images/logo1.png" class="logo"></a>
-                        </div>
+                        {{-- <div class="row">
+                           <a href="{{ route('index') }}"><img src="folders/assets/images/logo-events.png" class="logo"></a>
+                        </div> --}}
                         <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
-                            <img src="account/assets/images/image.png" class="image">
+                            <img src="account/assets/images/banner1.png" class="image">
                         </div>
                     </div>
                 </div>

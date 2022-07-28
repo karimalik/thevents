@@ -22,11 +22,11 @@
             <div class="row d-flex">
                 <div class="col-lg-6">
                     <div class="card1 pb-5">
-                        <div class="row">
+                        {{-- <div class="row">
                            <a href="{{ route('index') }}"><img src="folders/assets/images/logo1.png" class="logo"></a>
-                        </div>
+                        </div> --}}
                         <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
-                            <img src="account/assets/images/image.png" class="image">
+                            <img src="account/assets/images/banner1.png" class="image">
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                             </div>
                             <div class="row px-3 mt-4">
                                 <label class="mb-1"><h6 class="mb-0 text-sm">Confirm Password</h6></label>
-                                <input type="password" id="password-confirm" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input type="password" id="password-confirm" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm password">
                             </div> <br/>
                             <div class="row mb-3 px-3">
                                 <button type="submit" class="btn btn-blue text-center">Register</button>
