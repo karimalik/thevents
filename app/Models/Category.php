@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Category extends Model
 {
@@ -31,7 +32,7 @@ class Category extends Model
         parent::boot();
 
         static::created(function ($categorie) {
-            $categorie->slug = $categorie->createSlug($categorie->title);
+            $categorie->slug = $categorie->createSlug($categorie->name);
             $categorie->save();
         });
     }
