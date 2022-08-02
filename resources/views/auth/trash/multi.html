@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <title>Bootstrap multiple select with checkboxes example - CodePlaners</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+</head>
+<body>
+ 
+ 
+<div class="container">
+    <strong>Select Language:</strong>
+    <select id="MultipleCheckboxes" multiple="multiple">
+        <option value="php">PHP</option>
+        <option value="laravel">Laravel</option>
+        <option value="java">Java</option>
+        <option value="sql">SQL</option>
+        <option value="jquery">Jquery</option>
+    </select>
+</div>
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript">
+        $(function() {
+                $('#MultipleCheckboxes').multiselect({
+                    enableClickableOptGroups: true,
+                    includeSelectAllOption:true,
+                    nonSelectedText: 'Select language'
+                });
+            });
+    </script>
+ 
+ 
+</body>
+</html>

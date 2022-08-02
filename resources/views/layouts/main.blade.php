@@ -42,7 +42,7 @@
 <nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
   <div class="container-fluid p-0">
     <!-- logo -->
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="{{route('index')}}">
       <img src="assets/images/logo-events.png" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -56,11 +56,6 @@
                 <span>/</span>
                 </a>
             </li>
-            {{-- <li class="nav-item">
-            <a class="nav-link" href="{{ route('about-us') }}">About Us
-                <span>/</span>
-            </a>
-            </li> --}}
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('booking-events.index') }}">Booking Events
                 <span>/</span>
@@ -115,9 +110,10 @@
 			</div>
 			<div class="col-md-6 ml-auto align-self-center">
 				<!-- Subscription form -->
-				<form action="#" class="row">
+				<form method="POST" action="{{ route('newsLetter.store') }}" class="row">
+                    @csrf
 					<div class="col-lg-8 col-md-12">
-						<input type="email" class="form-control main white mb-lg-0" placeholder="Email">
+						<input type="email" name="email" class="form-control main white mb-lg-0" placeholder="Email" required>
 					</div>
 					<div class="col-lg-4 col-md-12">
 						<div class="subscribe-button">

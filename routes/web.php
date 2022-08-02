@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\WelcomeController;
+// use App\Http\Controllers\NewsLetterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ use App\Http\Controllers\WelcomeController;
 Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about-us');
 Route::get('contact-us', [App\Http\Controllers\ContactController::class, 'index'])->name('contact-us');
 Route::post('contact-us', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
+Route::post('newsletter', [App\Http\Controllers\NewsLetterController::class, 'store'])->name('newsLetter.store');
 Route::resource('/', WelcomeController::class);
 Route::resource('booking-events', EventsController::class);
 

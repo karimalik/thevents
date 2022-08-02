@@ -186,7 +186,7 @@
                 <div class="col-12 text-center">
                     <!-- Pagination -->
                     <nav class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-main-md">View More</a>
+                        <a href=" {{ route('booking-events.index') }} " class="btn btn-main-md">View More</a>
                     </nav>
                 </div>
             </div>
