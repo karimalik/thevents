@@ -30,6 +30,21 @@
     <section class="section contact-form">
         <div class="container">
             <div class="row">
+                @if ($message = Session::get('success'))
+                    <div class="alert alert-success alert-dismissible fade show col-12 text-center" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </div>
+                @endif 
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 <div class="col-12">
                     <div class="section-title">
                         <h3>Get in <span class="alternate">Touch</span></h3>
@@ -37,18 +52,39 @@
                     </div>
                 </div>
             </div>
-            <form action="#" class="row">
+            <form method="POST" action="{{ route('contact.store') }}" class="row">
+                @csrf
                 <div class="col-md-6">
-                    <input type="text" class="form-control main" name="name" id="name" placeholder="Name">
+                    <input type="text" class="form-control main @error('name') is-invalid @enderror " name="name" id="name" placeholder="Name" required value="{{ old('name') }}">
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="col-md-6">
-                    <input type="email" class="form-control main" name="email" id="email" placeholder="Email">
+                    <input type="email" class="form-control main @error('email') is-invalid @enderror " name="email" id="email" placeholder="Email" required value="{{ old('email') }}">
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="col-md-12">
-                    <input type="text" class="form-control main" name="phone" id="phone" placeholder="Phone">
+                    <input type="text" class="form-control main @error('phone') is-invalid @enderror " name="phone" id="phone" placeholder="Phone" required value="{{ old('phone') }}">
+                    @error('phone')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="col-md-12">
-                    <textarea name="message" id="message" class="form-control main" rows="10" placeholder="Your Message"></textarea>
+                    <textarea name="message" id="message" class="form-control main @error('message') is-invalid @enderror " rows="10" placeholder="Your Message" required value="{{ old('message') }}"></textarea>
+                    @error('message')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="col-12 text-center">
                     <button type="submit" class="btn btn-main-md">Send Message</button>

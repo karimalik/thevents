@@ -56,11 +56,11 @@
                 <span>/</span>
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
             <a class="nav-link" href="{{ route('about-us') }}">About Us
                 <span>/</span>
             </a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('booking-events.index') }}">Booking Events
                 <span>/</span>
@@ -185,20 +185,20 @@
   </div>
 </footer>
 <!-- Subfooter -->
-<footer class="subfooter">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 align-self-center">
-        <div class="copyright-text">
-          <p><a href="index.html">TH Events</a> &copy; 2022, Designed &amp; Developed by <a href="https://webixcm.online/">WebixCM</a></p>
+ <footer class="subfooter">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 align-self-center">
+            <div class="copyright-text">
+            <p><a href="index.html">TH Events</a> &copy; 2022, Designed &amp; Developed by <a href="https://webixcm.online/">WebixCM</a></p>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
-      </div>
+        <div class="col-md-6">
+            <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
   <!-- JAVASCRIPTS -->

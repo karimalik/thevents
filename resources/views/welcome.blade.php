@@ -19,7 +19,7 @@
                         {{-- <div class="timer"></div> --}}
                         <h1>TH Events</h1>
                         <h6>
-                            EventBookings is an affordable and powerful event ticketing platform for event organisers, promoters, and managers. Easily create, promote and sell tickets to your events of any type and size.
+                            TH Events is an affordable and powerful event ticketing platform for event organisers, promoters, and managers. Easily create, promote and sell tickets to your events of any type and size.
                         </h6>
                         <!-- Action Button -->
                         <a href="#" class="btn btn-white-md">Create Event</a>
@@ -45,22 +45,21 @@
                 </div>
                 <div class="col-lg-8 col-md-6 align-self-center">
                     <div class="content-block">
-                        <h2>About TH <span class="alternate">Eventre</span></h2>
+                        <h2>About TH <span class="alternate">Events</span></h2>
                         <div class="description-one">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco.
+                                TH Events is the first ever powerful event ticketing and promotion platform. It allows event organisers, promoters and managers to easily create, promote and sell tickets for events of any size (concert, conference, training, art, etc...).
+
+                                Through the TH Events platform, it becomes easier for you to manage and promote your events and also to sell your tickets more easily.
                             </p>
-                        </div>
-                        <div class="description-two">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt ut labore et dolore magna aliq enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
                         </div>
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a href="#" class="btn btn-main-md">Create Event</a>
+                                <a href="#" class="btn btn-main-md">Create Your Event</a>
                             </li>
-                            <li class="list-inline-item">
+                            {{-- <li class="list-inline-item">
                                 <a href="{{ route('about-us') }}" class="btn btn-transparent-md">Read more</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -261,7 +260,7 @@
                     </div>
                     <!-- Title -->
                     <div class="sponsor-btn text-center">
-                        <a href="#" class="btn btn-main-md">Become a sponsor</a>
+                        <a href=" {{ route('contact-us') }} " class="btn btn-main-md">Become a sponsor</a>
                     </div>
                 </div>
             </div>

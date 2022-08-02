@@ -23,6 +23,7 @@ use App\Http\Controllers\WelcomeController;
  */
 Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about-us');
 Route::get('contact-us', [App\Http\Controllers\ContactController::class, 'index'])->name('contact-us');
+Route::post('contact-us', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 Route::resource('/', WelcomeController::class);
 Route::resource('booking-events', EventsController::class);
 
