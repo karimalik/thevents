@@ -35,7 +35,7 @@
     =            About            =
     ============================-->
 
-    <section class="section about">
+    <section class="section about section-about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 align-self-center">

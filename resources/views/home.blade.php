@@ -53,7 +53,7 @@
                         </ul>
                         </div>
                         <div class="col-5 text-center">
-                        <img src="admin/dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                        <img src="{{asset('admin/dist/img/user1-128x128.jpg')}}" alt="user-avatar" class="img-circle img-fluid">
                         </div>
                     </div>
                     </div>
@@ -85,7 +85,7 @@
                         </ul>
                         </div>
                         <div class="col-5 text-center">
-                        <img src="admin/dist/img/user2-160x160.jpg" alt="user-avatar" class="img-circle img-fluid">
+                        <img src="{{asset('admin/dist/img/user2-160x160.jpg')}}" alt="user-avatar" class="img-circle img-fluid">
                         </div>
                     </div>
                     </div>
@@ -117,7 +117,7 @@
                         </ul>
                         </div>
                         <div class="col-5 text-center">
-                        <img src="admin/dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                        <img src="{{asset('admin/dist/img/user1-128x128.jpg')}}" alt="user-avatar" class="img-circle img-fluid">
                         </div>
                     </div>
                     </div>
@@ -149,7 +149,7 @@
                         </ul>
                         </div>
                         <div class="col-5 text-center">
-                        <img src="admin/dist/img/user2-160x160.jpg" alt="user-avatar" class="img-circle img-fluid">
+                        <img src="{{asset('admin/dist/img/user2-160x160.jpg')}}" alt="user-avatar" class="img-circle img-fluid">
                         </div>
                     </div>
                     </div>

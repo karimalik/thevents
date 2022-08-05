@@ -70,7 +70,7 @@
                         <a class="nav-link" href="#">Faq<span>/</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/home') }}">Dashboard<span>/</span></a>
+                        <a class="nav-link" href="{{ url('cpanel/home') }}">Dashboard<span>/</span></a>
                     </li>
                 @else
                     <li class="nav-item">

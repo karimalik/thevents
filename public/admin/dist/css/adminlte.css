@@ -154,6 +154,10 @@ sub {
   bottom: -.25em;
 }
 
+.link-footer {
+    color: #6610f2;
+}
+
 sup {
   top: -.5em;
 }
@@ -2694,6 +2698,13 @@ fieldset:disabled a.btn {
   border-color: #17a2b8;
   box-shadow: none;
 }
+
+.btn-indigo {
+    color: #ffffff;
+    background-color: #6610f2;
+    border-color: #6610f2;
+    box-shadow: none;
+  }
 
 .btn-info:hover {
   color: #ffffff;

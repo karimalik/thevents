@@ -28,10 +28,16 @@ class Events extends Model
     ];
 
     public function categories() {
+
         return $this->belongToMany(Category::class);
     }
 
-        /**
+    public function user() {
+
+        return $this->belongTo(User::class); 
+    }
+
+    /**
 
      * Boot the model.
 

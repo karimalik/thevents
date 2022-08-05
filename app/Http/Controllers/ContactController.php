@@ -35,7 +35,7 @@ class ContactController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreEventsRequest  $request
+     * @param  \App\Illuminate\Http\Requests $request
      * @return \Illuminate\Http\Response
     */
     public function store(Request $request)
